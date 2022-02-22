@@ -3,11 +3,9 @@ import React from "react";
 class Footer extends React.Component {
   render() {
     return (
-      <>
-        <footer>
-          <h1>Footer</h1>
+        <footer style={{position: "absolute", bottom: 0,}}>
+          &copy;Brady Camp 2022
         </footer>
-      </>
     );
   }
 }

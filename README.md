@@ -22,7 +22,8 @@
 ## Change Log
 
 - 02-21-2022 5:20pm EST - File structure to app complete for initial structure
-- 02-21-2022 5:26pm EST - Imported React Bootstrap
+- 02-21-2022 5:26pm EST - Imported React Bootstrap and Axios
+- 02-21-2022 5:56pm EST - API Key added
 
 ## Credit and Collaborations
 
