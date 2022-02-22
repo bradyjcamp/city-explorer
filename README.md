@@ -25,6 +25,7 @@
 - 02-21-2022 5:26pm EST - Imported React Bootstrap and Axios
 - 02-21-2022 5:56pm EST - API Key added
 - 02-21-2022 9:10pm EST - Added form that displays location info based on user search
+- 02-21-2022 10:43pm EST - Added map image
 
 ## Credit and Collaborations
 
