@@ -48,7 +48,7 @@ class Main extends React.Component {
       <main className="text-center">
         <Form style={{width: "max-content", margin: "auto"}}onSubmit={this.getCityData}>
           <Form.Label>
-            Search a U.S. City:
+            Search for a City:
           </Form.Label>
             <Form.Control className="text-center mb-2" type="text" placeholder="Seattle, Washington" onInput={this.handleCityInput} />
           <Button variant="info" type="submit">Explore!</Button>
