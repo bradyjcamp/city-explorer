@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# City Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Author**: Brady Camp
+**Version**: 1.2.0
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+- This application is called City Explorer. It includes a search bar that allows the user to type in the name of a city and be displayed a variety of information pertaining to that city as well as a map. This will help users learn more about cities they wish to explore.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The first step was to create a very simple whiteboard drawing of what the web request-response cycle(WRRC) would look like.
+- Then create a new react app from your local machine using the command `create react app city-explorer`.
+- After that, create a repo in GitHub and link them together following the instructions on GitHub.
+- This then imports all the files needed to get started.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Architecture
 
-### `npm test`
+- Whiteboard created using Miro.
+- This application includes JSX, React Bootstrap, Axios library, and Location IQ Geocoding API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Change Log
 
-### `npm run build`
+- 02-21-2022 5:20pm EST - File structure to app complete for initial structure
+- 02-21-2022 5:26pm EST - Imported React Bootstrap and Axios
+- 02-21-2022 5:56pm EST - API Key added
+- 02-21-2022 9:10pm EST - Added form that displays location info based on user search
+- 02-21-2022 10:43pm EST - Added map image
+- 02-21-2022 11:12pm EST - Added error code and styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Credit and Collaborations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ~----
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Time Estimation for Completion
 
-### `npm run eject`
+- Number and name of feature: Laying foundation, adding error code, map, and coordinates
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Estimate of time needed to complete: 4 hours
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Start time: 5:05pm
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Finish time: 11:16pm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Actual time needed to complete: 6 hours
