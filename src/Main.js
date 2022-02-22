@@ -7,7 +7,9 @@ class Main extends React.Component {
     super(props);
     this.state = {
       city: '',
-      cityData: {}
+      cityData: {},
+      error: false,
+      errorAlert: ''
     };
   }
 
@@ -20,13 +22,22 @@ class Main extends React.Component {
 
   getCityData = async (e) => {
     e.preventDefault();
-    let cityData = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`);
+    try {let cityData = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`);
     this.setState({
       cityData: cityData.data[0]
-    });
+    })} catch(error){
+        console.log('error:', error);
+        console.log('error.response:',error.response)
+        this.setState({
+          error: true,
+          errorAlert: `Uh oh! An Error has Occurred: ${error.response.status}, ${error.response.data.error}`
+        })
 
-    console.log(this.state.cityData.display_name);
-  }
+    }
+
+    // console.log(this.state.cityData.display_name);
+  
+}
 
   
   render() {
@@ -44,6 +55,8 @@ class Main extends React.Component {
         </Form>
         <Container className="mt-4 mb-5">
           {
+            this.state.error ?
+            <p>{this.state.errorAlert}</p>:
             this.state.cityData.display_name ?
             <p>Location Name and Coordinates: {this.state.cityData.display_name},
             ({this.state.cityData.lat},
@@ -53,6 +66,7 @@ class Main extends React.Component {
           </Container>
           <Container className="mb-5">
           {
+            
             this.state.cityData.lat ? <Image src ={url} alt="oops"></Image>: <Image src="" alt=""></Image>
           }
           </Container>

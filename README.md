@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Brady Camp
-**Version**: 1.0.0
+**Version**: 1.2.0
 
 ## Overview
 
@@ -26,6 +26,7 @@
 - 02-21-2022 5:56pm EST - API Key added
 - 02-21-2022 9:10pm EST - Added form that displays location info based on user search
 - 02-21-2022 10:43pm EST - Added map image
+- 02-21-2022 11:12pm EST - Added error code and styling
 
 ## Credit and Collaborations
 
@@ -33,12 +34,12 @@
 
 ### Time Estimation for Completion
 
-- Number and name of feature: ________________________________
+- Number and name of feature: Laying foundation, adding error code, map, and coordinates
 
-- Estimate of time needed to complete: __4 hours___
+- Estimate of time needed to complete: 4 hours
 
-- Start time: _5:05pm____
+- Start time: 5:05pm
 
-- Finish time: _____
+- Finish time: 11:16pm
 
-- Actual time needed to complete: _____
+- Actual time needed to complete: 6 hours

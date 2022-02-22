@@ -38,6 +38,16 @@
 }
 
 *{
-  background-color: #89ccb2;
+  background-color: #9ad69a;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+h1{
+  background-color: rgb(233, 205, 79);
+}
+
+footer{
+  background-color: rgb(233, 205, 79);
 }
