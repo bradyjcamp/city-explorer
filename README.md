@@ -34,7 +34,7 @@
 
 - Number and name of feature: ________________________________
 
-- Estimate of time needed to complete: __3 hours___
+- Estimate of time needed to complete: __4 hours___
 
 - Start time: _5:05pm____
 
