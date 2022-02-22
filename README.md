@@ -24,6 +24,7 @@
 - 02-21-2022 5:20pm EST - File structure to app complete for initial structure
 - 02-21-2022 5:26pm EST - Imported React Bootstrap and Axios
 - 02-21-2022 5:56pm EST - API Key added
+- 02-21-2022 9:10pm EST - Added form that displays location info based on user search
 
 ## Credit and Collaborations
 
