@@ -9,7 +9,7 @@ class Main extends React.Component {
     this.state = {
       city: '',
       cityData: {},
-      weatherData: [],
+      // weatherData: [],
       error: false,
       errorAlert: ''
     };
@@ -25,10 +25,10 @@ class Main extends React.Component {
   getCityData = async (e) => {
     e.preventDefault();
     try {let cityData = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&q=${this.state.city}&format=json`);
-    let weatherData = await axios.get(`http://localhost:3001/weather?searchQuery=${this.state.city}`);
+    // let weatherData = await axios.get(`http://localhost:3001/weather?searchQuery=${this.state.city}`);
     this.setState({
       cityData: cityData.data[0],
-      weatherData: weatherData.data
+      // weatherData: weatherData.data
     })} catch(error){
       console.log('error:', error);
       console.log('error.response:',error.response)
@@ -45,7 +45,7 @@ class Main extends React.Component {
   
   
   render() {
-    console.log(this.state.weatherData)
+    // console.log(this.state.weatherData)
     // console.log('app state: ', this.state)
     let url = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.cityData.lat},${this.state.cityData.lon}&zoom=12`;
     return (
