@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Form, Button, Container, Image } from "react-bootstrap"
-import { queryAllByAltText } from "@testing-library/react";
+// import { queryAllByAltText } from "@testing-library/react";
 
 class Main extends React.Component {
   constructor(props) {
