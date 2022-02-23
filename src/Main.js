@@ -113,7 +113,8 @@ class Main extends React.Component {
               <p></p>
             )}
           </Container>
-          {this.state.renderWeather && <ListGroup>{dailyForecasts}</ListGroup>} 
+          {
+          this.state.renderWeather && <ListGroup>{dailyForecasts}</ListGroup>} 
           <h3>{this.state.weatherErrorAlert}</h3>
 
           <Container className="mb-5">
