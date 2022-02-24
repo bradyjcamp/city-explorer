@@ -136,7 +136,7 @@ class Main extends React.Component {
             )}
           </Container>
           
-          {this.state.renderWeather && <ListGroup>{dailyForecasts}</ListGroup>}
+          {this.state.renderWeather && <ListGroup className="mt-4 mb-5 w-50" style={{ margin: "auto" }}>{dailyForecasts}</ListGroup>}
           <h3>{this.state.weatherErrorAlert}</h3>
 
           <Container className="mb-5">
@@ -147,7 +147,7 @@ class Main extends React.Component {
             )}
           </Container>
 
-          {this.state.renderMovie && <ListGroup>{movieListInfo}</ListGroup>}
+          {this.state.renderMovie && <ListGroup className="mt-4 mb-5 w-50" style={{ margin: "auto" }}>{movieListInfo}</ListGroup>}
           <h3>{this.state.movieErrorAlert}</h3>
         </main>
       </>
