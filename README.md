@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Brady Camp
-**Version**: 1.2.0
+**Version**: 2.1.0
 
 ## Overview
 
@@ -10,7 +10,7 @@
 ## Getting Started
 
 - The first step was to create a very simple whiteboard drawing of what the web request-response cycle(WRRC) would look like.
-  - [whiteboard](https://miro.com/app/board/uXjVOLeZOEg=/)
+  - [whiteboard](https://miro.com/app/board/uXjVOK2U1ho=/)
 - Then create a new react app from your local machine using the command `create react app city-explorer`.
 - After that, create a repo in GitHub and link them together following the instructions on GitHub.
 - This then imports all the files needed to get started.
@@ -28,6 +28,11 @@
 - 02-21-2022 9:10pm EST - Added form that displays location info based on user search
 - 02-21-2022 10:43pm EST - Added map image
 - 02-21-2022 11:12pm EST - Added error code and styling
+- 02-22-2022 6:30pm EST - created getWeather function
+- 02-22-2022 9:30pm EST - linked data from server to display weather forecast
+- 02-23-2022 6:30pm EST - small bug fix to forecast rendering
+- 02-23-2022 7:30pm EST - edits to parameters to take in lat and lon and new weather data
+- 02-23-2022 8:30pm EST - rendered movie data from movie database
 
 ## Credit and Collaborations
 
@@ -44,3 +49,27 @@
 - Finish time: 11:16pm
 
 - Actual time needed to complete: 6 hours
+
+### Time Estimation for Completion
+
+- Number and name of feature: Live Weather 
+
+- Estimate of time needed to complete: 2 hours
+
+- Start time: 5:00pm
+
+- Finish time: 06:30pm
+
+- Actual time needed to complete: 1 hour 30 minutes
+
+### Time Estimation for Completion
+
+- Number and name of feature: Third Party Movies API 
+
+- Estimate of time needed to complete: 2 hours
+
+- Start time: 6:45pm
+
+- Finish time: 08:30pm
+
+- Actual time needed to complete: 1 hour 45 minutes
