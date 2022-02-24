@@ -1,14 +1,6 @@
 import React from "react";
 import axios from "axios";
-import {
-  Form,
-  Button,
-  Container,
-  Image,
-  // Card,
-  ListGroup,
-} from "react-bootstrap";
-
+import { Form, Button, Container, Image, ListGroup } from "react-bootstrap";
 
 class Main extends React.Component {
   constructor(props) {
@@ -18,11 +10,15 @@ class Main extends React.Component {
       cityData: [],
       // renderCityData: false,
       weatherData: [],
+      movieData: [],
       error: false,
       errorAlert: "",
       weatherError: false,
       weatherErrorAlert: "",
       renderWeather: false,
+      renderMovie: false,
+      movieError: false,
+      movieErrorAlert: "",
     };
   }
 
@@ -51,6 +47,7 @@ class Main extends React.Component {
       });
     }
     this.getWeather();
+    this.getMovieData();
 
     // console.log(this.state.cityData.display_name);
   };
@@ -58,7 +55,7 @@ class Main extends React.Component {
   getWeather = async () => {
     try {
       let results = await axios.get(
-        `http://localhost:3001/weather?searchQuery=${this.state.city}`
+        `http://localhost:3001/weather?lat=${this.state.cityData.lat}&lon=${this.state.cityData.lon}`
       );
       this.setState({
         weatherData: results.data,
@@ -72,14 +69,39 @@ class Main extends React.Component {
     }
   };
 
+  getMovieData = async () => {
+    try {
+      let movieData = await axios.get(
+        `http://localhost:3001/movies?nameOfCity=${this.state.city}`
+      );
+      this.setState({
+        movieData: movieData.data,
+        renderMovie: true,
+      });
+    } catch (error) {
+      this.setState({
+        movieError: true,
+        movieErrorAlert: `A Movie Error Occurred: ${error.response.status}, ${error.response.data.error}`,
+      });
+    }
+  };
+
   render() {
-    // console.log(this.state.weatherData);
+    console.log(this.state.weatherData);
     // console.log('app state: ', this.state)
     let url = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${this.state.cityData.lat},${this.state.cityData.lon}&zoom=12`;
 
     let dailyForecasts = this.state.weatherData.map((forecast, idx) => (
       <ListGroup.Item key={idx}>
-        {forecast.date}: {forecast.description}
+        {forecast.date}: Low of {forecast.low}, and a High of {forecast.high},
+        with {forecast.description}
+      </ListGroup.Item>
+    ));
+    let movieListInfo = this.state.movieData.map((movieInfo, idx) => (
+      <ListGroup.Item key={idx}>
+        {movieInfo.title}: {movieInfo.overview}, release date:{" "}
+        {movieInfo.release}, ratings: {movieInfo.rating}, total votes:{" "}
+        {movieInfo.votes}.
       </ListGroup.Item>
     ));
     return (
@@ -113,8 +135,8 @@ class Main extends React.Component {
               <p></p>
             )}
           </Container>
-          {
-          this.state.renderWeather && <ListGroup>{dailyForecasts}</ListGroup>} 
+          
+          {this.state.renderWeather && <ListGroup>{dailyForecasts}</ListGroup>}
           <h3>{this.state.weatherErrorAlert}</h3>
 
           <Container className="mb-5">
@@ -124,6 +146,9 @@ class Main extends React.Component {
               <Image src="" alt=""></Image>
             )}
           </Container>
+
+          {this.state.renderMovie && <ListGroup>{movieListInfo}</ListGroup>}
+          <h3>{this.state.movieErrorAlert}</h3>
         </main>
       </>
     );
