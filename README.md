@@ -11,6 +11,7 @@
 
 - The first step was to create a very simple whiteboard drawing of what the web request-response cycle(WRRC) would look like.
   - [WRRC](/city-explorer-wrrc.jpg)
+  - [WRRC](/WRRC.png)
 - Then create a new react app from your local machine using the command `create react app city-explorer`.
 - After that, create a repo in GitHub and link them together following the instructions on GitHub.
 - This then imports all the files needed to get started.
