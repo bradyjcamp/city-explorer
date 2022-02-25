@@ -11,6 +11,7 @@
 
 - The first step was to create a very simple whiteboard drawing of what the web request-response cycle(WRRC) would look like.
   - [WRRC](/city-explorer-wrrc.jpg)
+  - [WRRC](/WRRC.png)
 - Then create a new react app from your local machine using the command `create react app city-explorer`.
 - After that, create a repo in GitHub and link them together following the instructions on GitHub.
 - This then imports all the files needed to get started.
@@ -33,6 +34,7 @@
 - 02-23-2022 6:30pm EST - small bug fix to forecast rendering
 - 02-23-2022 7:30pm EST - edits to parameters to take in lat and lon and new weather data
 - 02-23-2022 8:30pm EST - rendered movie data from movie database
+- 02-24-2022 6:30pm EST - added components for form, map, city data, movies, weather, etc..
 
 ## Credit and Collaborations
 
@@ -52,7 +54,7 @@
 
 ### Time Estimation for Completion
 
-- Number and name of feature: Live Weather 
+- Number and name of feature: Live Weather
 
 - Estimate of time needed to complete: 2 hours
 
@@ -64,7 +66,7 @@
 
 ### Time Estimation for Completion
 
-- Number and name of feature: Third Party Movies API 
+- Number and name of feature: Third Party Movies API
 
 - Estimate of time needed to complete: 2 hours
 
@@ -73,3 +75,15 @@
 - Finish time: 08:30pm
 
 - Actual time needed to complete: 1 hour 45 minutes
+
+### Time Estimation for Completion 
+
+- Number and name of feature: Refactor
+
+- Estimate of time needed to complete: 2 hours
+
+- Start time: 4:45pm
+
+- Finish time: 06:45pm
+
+- Actual time needed to complete: 2 hours
