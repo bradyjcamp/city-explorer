@@ -14,6 +14,7 @@
   - [WRRC 2](/city-explorer-server-API.jpg)
   - [WRRC 3](/city-explorer-wrrc.jpg)
   - [WRRC 4](/WRRC.png)
+  - [WRRC 5](/WRRC-cache.png)
 - Then create a new react app from your local machine using the command `create react app city-explorer`.
 - After that, create a repo in GitHub and link them together following the instructions on GitHub.
 - This then imports all the files needed to get started.
