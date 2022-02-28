@@ -105,6 +105,7 @@ class Main extends React.Component {
             weatherErrorAlert={this.state.weatherErrorAlert}
           />
           <Map cityData={this.state.cityData}/>
+          <h2>Movies from this City:</h2>
           <Movies
             movieData={this.state.movieData}
             renderMovie={this.state.renderMovie}
