@@ -9,7 +9,7 @@ This application is called City Explorer. It includes a search bar that allows t
 
 ## Getting Started
 
-Click on attached link for live site.
+Click on attached [link](https://wonderful-liskov-30f90e.netlify.app/) for live site.
 
 If you would like to install locally please clone down repository and enter command `npm i`.
 
@@ -36,4 +36,4 @@ This application includes JSX, React Bootstrap, Axios library, and Location IQ G
 - 02-23-2022 6:30pm EST - small bug fix to forecast rendering
 - 02-23-2022 7:30pm EST - edits to parameters to take in lat and lon and new weather data
 - 02-23-2022 8:30pm EST - rendered movie data from movie database
-- 02-24-2022 6:30pm EST - added components for form, map, city data, movies, weather, etc..
+- 02-24-2022 6:30pm EST - added components for form, map, city data, movies, weather
