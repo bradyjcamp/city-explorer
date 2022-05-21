@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Brady Camp
-**Version**: 2.1.0
+**Version**: 1.0.2
 
 ## Overview
 
@@ -11,13 +11,21 @@ This application is called City Explorer. It includes a search bar that allows t
 
 Click on attached [link](https://wonderful-liskov-30f90e.netlify.app/) for live site.
 
-If you would like to install locally please clone down repository and enter command `npm i`.
+If you would like to install locally please clone Express Server to run locally - `git clone https://github.com/bradyjcamp/city-explorer-api.git`
 
-Then enter command `npm start` 
+Then install the server dependencies locally by entering `npm i`.
+
+Then enter command `npm start` to start the server.
+
+Next clone down the front end repository - `git clone https://github.com/bradyjcamp/city-explorer.git`
+
+Enter command `npm i`.
+
+Then enter command `npm start`.
 
 ## Architecture
 
-This application was creating using `create react app city-explorer`
+This application was creating using React - `create react app city-explorer`
 
 Whiteboard created using Miro.
 
