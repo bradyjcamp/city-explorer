@@ -13,7 +13,7 @@ Click on attached [link](https://wonderful-liskov-30f90e.netlify.app/) for live 
 
 If you would like to install locally please clone down repository and enter command `npm i`.
 
-Then enter command `npm start`
+Then enter command `npm start` 
 
 ## Architecture
 
