@@ -10,13 +10,17 @@ This application is called City Explorer. It includes a search bar that allows t
 ## Getting Started
 
 Click on attached link for live site.
+
 If you would like to install locally please clone down repository and enter command `npm i`.
+
 Then enter command `npm start` 
 
 ## Architecture
 
 This application was creating using `create react app city-explorer`
+
 Whiteboard created using Miro.
+
 This application includes JSX, React Bootstrap, Axios library, and Location IQ Geocoding API
 
 ## Change Log
