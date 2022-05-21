@@ -9,19 +9,13 @@ This application is called City Explorer. It includes a search bar that allows t
 
 ## Getting Started
 
-The first step was to create a very simple whiteboard drawing of what the web request-response cycle(WRRC) would look like.
-- [WRRC 1](/city-explorer-LocationIQ-API.jpg)
-- [WRRC 2](/city-explorer-server-API.jpg)
-- [WRRC 3](/city-explorer-wrrc.jpg)
-- [WRRC 4](/WRRC.png)
-- [WRRC 5](/WRRC-cache.png)
-
-Then create a new react app from your local machine using the command `create react app city-explorer`.
-After that, create a repo in GitHub and link them together following the instructions on GitHub.
-This then imports all the files needed to get started.
+Click on attached link for live site.
+If you would like to install locally please clone down repository and enter command `npm i`.
+Then enter command `npm start` 
 
 ## Architecture
 
+This application was creating using `create react app city-explorer`
 Whiteboard created using Miro.
 This application includes JSX, React Bootstrap, Axios library, and Location IQ Geocoding API
 
