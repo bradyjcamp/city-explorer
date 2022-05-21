@@ -10,6 +10,7 @@ class Movies extends React.Component {
     ));
     return (
       <>
+      {this.props.renderMovie ? <h2>Movies from this City:</h2> : <p></p>}
         {this.props.renderMovie && (
           <ListGroup className="mt-4 mb-5 w-50" style={{ margin: "auto" }}>
             {movieListInfo}

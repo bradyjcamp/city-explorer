@@ -1,11 +1,10 @@
 import React from "react";
-import Weather from "./Weather";
-import Movies from "./Movies";
-import Map from "./Map";
-import FormInput from "./FormInput";
-import CityData from "./CityData";
+import Weather from "./Weather/Weather";
+import Movies from "./Movies/Movies";
+import Map from "./CityData/Map";
+import FormInput from "./Form/FormInput";
+import CityData from "./CityData/CityData";
 import axios from "axios";
-
 
 class Main extends React.Component {
   constructor(props) {
@@ -97,15 +96,21 @@ class Main extends React.Component {
     return (
       <>
         <main className="text-center">
-          <FormInput getCityData={this.getCityData} handleCityInput={this.handleCityInput}/>
-          <CityData error={this.state.error} errorAlert={this.state.errorAlert} cityData={this.state.cityData}/>
+          <FormInput
+            getCityData={this.getCityData}
+            handleCityInput={this.handleCityInput}
+          />
+          <CityData
+            error={this.state.error}
+            errorAlert={this.state.errorAlert}
+            cityData={this.state.cityData}
+          />
           <Weather
             weatherData={this.state.weatherData}
             renderWeather={this.state.renderWeather}
             weatherErrorAlert={this.state.weatherErrorAlert}
           />
-          <Map cityData={this.state.cityData}/>
-          <h2>Movies from this City:</h2>
+          <Map cityData={this.state.cityData} />
           <Movies
             movieData={this.state.movieData}
             renderMovie={this.state.renderMovie}
