@@ -38,12 +38,13 @@
 }
 
 *{
-  background-color: #9ad69a;
+  background-color: #cccccc;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
 
 h1{
-  background-color: rgb(233, 205, 79);
+  background-color: rgb(92, 201, 255);
+  border-radius: 2vw;
 }

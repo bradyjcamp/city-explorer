@@ -47,7 +47,7 @@ class Main extends React.Component {
       // console.log("error.response:", error.response);
       this.setState({
         error: true,
-        errorAlert: `Uh oh! An Error has Occurred: ${error.response.status}, ${error.response.data.error}`,
+        errorAlert: `ERROR: ${error.response.status}, ${error.response.data.error}, Please Check Spelling`,
       });
     }
     this.getWeather();
@@ -68,7 +68,7 @@ class Main extends React.Component {
     } catch (error) {
       this.setState({
         weatherError: true,
-        weatherErrorAlert: `A Weather Error Occurred: ${error.response.status}, ${error.response.data.error} `,
+        weatherErrorAlert: `A Weather Error Occurred: ${error.response.status}`,
       });
     }
   };
@@ -91,8 +91,6 @@ class Main extends React.Component {
   };
 
   render() {
-    // console.log(this.state.weatherData);
-    // console.log('app state: ', this.state)
     return (
       <>
         <main className="text-center">

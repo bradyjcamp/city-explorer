@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 
 class CityData extends React.Component {
   render() {
+    console.log(this.props.cityData.display_name)
     return (
       <Container className="mt-4 mb-5 w-50" style={{ margin: "auto" }}>
         {this.props.error ? (
