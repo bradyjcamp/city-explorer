@@ -30,18 +30,3 @@ This application was creating using React - `create react app city-explorer`
 Whiteboard created using Miro.
 
 This application includes JSX, React Bootstrap, Axios library, and Location IQ Geocoding API
-
-## Change Log
-
-- 02-21-2022 5:20pm EST - File structure to app complete for initial structure
-- 02-21-2022 5:26pm EST - Imported React Bootstrap and Axios
-- 02-21-2022 5:56pm EST - API Key added
-- 02-21-2022 9:10pm EST - Added form that displays location info based on user search
-- 02-21-2022 10:43pm EST - Added map image
-- 02-21-2022 11:12pm EST - Added error code and styling
-- 02-22-2022 6:30pm EST - created getWeather function
-- 02-22-2022 9:30pm EST - linked data from server to display weather forecast
-- 02-23-2022 6:30pm EST - small bug fix to forecast rendering
-- 02-23-2022 7:30pm EST - edits to parameters to take in lat and lon and new weather data
-- 02-23-2022 8:30pm EST - rendered movie data from movie database
-- 02-24-2022 6:30pm EST - added components for form, map, city data, movies, weather
